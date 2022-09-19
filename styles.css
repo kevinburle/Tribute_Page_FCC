@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  background-color: #a9a9a9;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 20px
+}
+
+figure#img-div {
+  margin: auto;
+}
+
+img#image {
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+#img-caption {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9em;
+}
+
+#citation p {
+  width: 50%;
+  margin: 30px auto;
+  padding: 10px;
+  font-size: 0.95em;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #000000;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 5px 8px 8px #333333;
+}
+
+.content h3, .content p{
+  background-color: white;
+}
