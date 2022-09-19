@@ -1,2 +1,2 @@
 # Tribute_Page_FCC
-Build a Tribute Page. FreeCodeCamp Responsive Web Design Certification Project #2
+Build a Tribute Page. This is one of the required projects to earn the Responsive Web Design Certification from FreeCodeCamp.
